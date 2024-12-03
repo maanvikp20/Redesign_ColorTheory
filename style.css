@@ -67,7 +67,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .new-to-site > .newthings {
@@ -82,5 +82,23 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.questions > .questionthings {
+    margin-left: 100px;
+}
+
+.questions > .questionimage img{
+    border-radius: 10px;
+    height: 300px;
+    width: auto;
+}
+
+.mailing > p{
+    
+}
+
+.mailing > input{
+
 }
