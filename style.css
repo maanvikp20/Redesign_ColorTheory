@@ -11,34 +11,45 @@ body{
     src: url(McDonalds_Helvetica.ttf);
 }
 
-.nav-body{
+.nav-body {
     display: flex;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
     background-color: rgb(71, 6, 6);
+    color: white;
+    position: relative;
 }
 
-.nav-links{
+.nav-body .logo a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-body .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.nav-links {
     display: flex;
     margin-left: auto;
     gap: 20px;
 }
 
-.nav-links > a{
+.nav-links a {
     text-decoration: none;
     color: white;
-    font-weight: 500;
     font-size: 16px;
     padding: 8px 16px;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
-.nav-links > a:hover{
+.nav-links a:hover {
     background-color: rgb(124, 0, 0);
-    color: white;
-    transform: scale(1.05);
 }
 
 .banner{
@@ -63,42 +74,236 @@ body{
     margin-bottom: 20px;
 }
 
-.new-to-site{
+.new-to-site {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
 .new-to-site > .newthings {
     margin-right: 100px;
+    max-width: 400px;
 }
 
-.new-to-site > .newimage img{
+.new-to-site > .newthings .new1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(124, 0, 0);
+    margin-bottom: 10px;
+}
+
+.new-to-site > .newthings p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.new-to-site > .newthings .newlink {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(124, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.new-to-site > .newthings .newlink:hover {
+    background-color: rgb(71, 6, 6);
+    color: white;
+}
+
+.new-to-site > .newimage img {
     border-radius: 10px;
+    height: auto;
+    max-width: 400px;
 }
 
-.questions{
+.questions {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
 .questions > .questionthings {
     margin-left: 100px;
+    max-width: 400px;
 }
 
-.questions > .questionimage img{
+.questions > .questionthings .new1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(124, 0, 0);
+    margin-bottom: 10px;
+}
+
+.questions > .questionthings p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.questions > .questionthings .newlink {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(124, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.questions > .questionthings .newlink:hover {
+    background-color: rgb(71, 6, 6);
+    color: white;
+}
+
+.questions > .questionimage img {
     border-radius: 10px;
     height: 300px;
     width: auto;
 }
 
-.mailing > p{
-    
+.mailing {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.mailing > input{
+#flexform {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
 
+.mailing > form > .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#email-input {
+    height: 40px;
+    padding: 5px 10px;
+    border: 2px solid rgb(124, 0, 0);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    width: 250px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#email-input:focus {
+    outline: none;
+    border-color: rgb(124, 0, 0);
+    box-shadow: 0px 0px 8px rgba(124, 0, 0, 0.8);
+}
+
+#submit-button {
+    height: 40px;
+    padding: 5px 20px;
+    background-color: rgb(124, 0, 0);
+    color: white;
+    font-size: 16px;
+    border: rgb(151, 17, 17) solid 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#submit-button:hover {
+    background-color: rgb(124, 0, 0);
+    color: rgb(71, 6, 6);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+#submit-button:active {
+    transform: scale(0.95);
+}
+
+.mcspotlight-footer {
+    background-color: rgb(71, 6, 6);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: rgb(156, 50, 50);
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: rgb(71, 6, 6);
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 10;
+    }
+
+    .nav-links a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        padding: 20px 10px;
+    }
+
+    .banner-top h1 {
+        font-size: 28px;
+    }
+
+    .banner-bottom p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .new-to-site, .questions {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .new-to-site .newthings, .questions .questionthings {
+        margin: 0;
+    }
 }

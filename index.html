@@ -6,22 +6,21 @@
     <title>McSpotLight</title>
     <link rel="shortcut icon" href="https://www.citypng.com/public/uploads/preview/hd-mcdonalds-red-round-circular-circle-logo-icon-png-image-7017516947898359qtpcakiqi.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-body">
-            <h1>Mc<span class="spotlight">Spotlight</span></h1>
-            <div class="nav-links">
-                <a href="#">McLibel</a>
-                <a href="#">Issues</a>
-                <a href="#">Campaign</a>
-                <a href="#">Company</a>
-                <a href="#">Media</a>
-                <a href="#">Beyond McD's</a>
-                <a href="#">Debating Room</a>
-            </div>
+    <div class="nav-body">
+        <div class="logo">
+            <a href="#">McSpotlight</a>
         </div>
-    </nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="nav-links" id="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Campaigns</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
 
     <main>
         <div class="banner">
@@ -40,35 +39,51 @@
         <div class="new-to-site">
             <div class="newthings">
                 <p class="new1">New To The Site???</p>
+                <p>Explore what McSpotlight has to offer. Discover campaigns, stories, and resources that will inspire you to take action. Join our community and make a difference today!</p>
                 <a href="#" class="newlink">Start Here</a>
             </div>
             <div class="newimage">
-                <img src="https://www.mcspotlight.org/campaigns/current/subverts/subvert_pix/mcsub2.jpg">
+                <img src="https://www.mcspotlight.org/campaigns/current/subverts/subvert_pix/mcsub2.jpg" alt="McSpotlight Campaign">
             </div>
         </div>
-
+        
         <div class="questions">
             <div class="questionimage">
-                <img src="https://i.ytimg.com/vi/W5iVmjS4EZQ/maxresdefault.jpg">
+                <img src="https://i.ytimg.com/vi/W5iVmjS4EZQ/maxresdefault.jpg" alt="Frequently Asked Questions">
             </div>
             <div class="questionthings">
-                <p class="new1">New To The Site???</p>
-                <a href="#" class="newlink">Start Here</a>
+                <p class="new1">Have Questions?</p>
+                <p>We’re here to help! Check out our FAQ section or reach out to our team for support. Together, let’s uncover the truth and make informed choices.</p>
+                <a href="#" class="newlink">Get Answers</a>
             </div>
-        </div>
+        </div>        
 
         <div class="mailing">
             <form>
-                <p>Join the Mailing List</p>
-                <input type="text" placeholder="Enter Email">
+                <p id="flexform">Join the Mailing List</p>
+                <div class="form-group">
+                    <input id="email-input" type="text" placeholder="Enter Email">
+                    <button id="submit-button" type="submit">Submit</button>
+                </div>
             </form>
-        </div>
+        </div>            
     </main>
 
-    <footer>
-        
+    <footer class="mcspotlight-footer">
+        <p>&copy; 2024 McSpotlight by McDonald's. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
     </footer>
 
-
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.style.display = (navLinks.style.display === 'flex') ? 'none' : 'flex';
+        }
+    </script>
 </body>
 </html>
